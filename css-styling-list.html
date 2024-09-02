@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling list- Making navbar & scrollbar using overflow</title>
+    <style>
+        nav ul li {
+            list-style: devanagari;
+            list-style-position: inside;
+            background-color: greenyellow;
+            /* border: 2px solid black; */
+            display: inline-flex;
+            padding: 15px;
+            margin: 20px;
+        }
+
+        .box {
+            width: 50vw;
+            height: 20vh;
+            border: 2px solid yellowgreen;
+            
+            /* overflow: auto; */
+            /* white-space: nowrap; horizontal scroll */
+            /* text-overflow: ellipsis;  then .....(dot appears) */
+            /* overflow-x: hidden; (overflow x-axis ka hidden hoga) */
+            /* overflow-y: hidden;     (if both hidden, then both overflow hidden hoga) */
+            /* overflow-x: scroll; */
+            overflow: hidden auto; /* x-axis=hidden y-axix=scroll
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACTS</li>
+            <li>BLOGS</li>
+        </ul>
+    </nav>
+
+    <div class="box">
+        if overflow = scroll .... means box can scroll (scroll bar hamesha dekne ko milega)........ and if overflow =
+        auto.... then it will set (scroll) according to width and height .... matlab agar width and height jyada hui or
+        content km hua to scroll nahi hoga... <br> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+        rerum quam saepe ad vel at provident vero sequi veritatis? Nemo repudiandae consequatur voluptatum tempore
+        accusantium. Odio exercitationem officiis est molestiae accusamus iste officia nobis repellat harum, soluta amet
+        expedita! Amet numquam nobis officiis hic eum vitae asperiores, sequi suscipit aliquid cumque doloremque
+        provident eligendi aperiam, optio esse, repellat molestias in natus fuga est possimus ab? Quidem ratione
+        officiis dignissimos vel dolorum iusto inventore libero officia porro vitae sed quia tenetur laborum iste nihil
+        at, atque ipsa delectus assumenda deserunt voluptatibus facilis excepturi dicta dolores? A neque placeat
+        perferendis sint ex suscipit excepturi, similique quo blanditiis ipsa culpa inventore ea dolore dolores nobis
+        rem quod architecto mollitia voluptatem vitae. Voluptatem atque officiis dolores, exercitationem natus
+        accusamus, illo saepe sit mollitia officia, pariatur ad veniam? Cumque, repellendus, iste vel officia ut
+        accusamus explicabo ratione nam, consequuntur reprehenderit laboriosam corrupti incidunt ab doloribus suscipit
+        dignissimos eum voluptatum nostrum sit. Sapiente ratione porro veritatis aut enim, nam non doloremque delectus
+        quidem neque accusantium! Laudantium ullam veniam aut culpa, eius, dolor a vitae, ad in iusto dicta voluptate?
+        Deleniti nobis, perferendis, nulla rem eveniet sed, autem quasi tempore voluptates porro omnis beatae quod
+        possimus dolore. </div>
+</body>
+
+</html>

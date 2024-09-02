@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specficity in CSS</title>
+    <style>
+        /* The specificity of this selector is 1   because element selector sepec^ = 1*/
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cpurple {
+            color: purple;
+        }
+
+        /* The specificity of this selector is 1 + 10 = 11  because element selector sepec^ = 1 & class selec^ = 10 */
+        h1.yellow {
+            color: darkmagenta;
+        }
+
+        /* This is an example of attribute selector. The specificity of this selector is 10 */
+        [data-x=a] {
+            color: maroon;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+    <h2>
+        <div>Specificity Calculation</div>
+        To calculate specificity, assign a value to each part of the selector:
+        <ol>
+            <li> Universal Selector: 0</li>
+            <li>Element selectors and pseudo-elements: 1</li>
+            <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+            <li>ID selectors: 100</li>
+            <li>Inline styles: 1000</li>
+        </ol>
+        Then, add up the values of all the parts in the selector.
+    </h2>
+    <h2>Note - An (!important) at the end of a CSS value gets a specificity score of 10,000 points.</h2>
+    <h3>Ques - What will be the specificity value of the following selector:
+        <div> a.harryclass.rohan-class[href]:hover {
+            <div> color: red;</div>
+            }
+        </div>
+        <ul>
+            <li>Element selectors: a contributes 1 point.</li>
+            <li>Class selectors: .harryclass and .rohan-class each contributes 10 points, totaling 20 points.</li>
+            <li> Attribute selector: [href] contributes 10 points.</li>
+            <li>Pseudo-class: :hover adds another 10 points.</li>
+            <li> Add up all these values: 1 (element) + 20 (classes) + 10 (attribute) + 10 (pseudo-class) = 41.</li>
+            <li>So, the specificity value of the selector a.harryclass.rohan-class[href]:hover will be 41.</li>
+        </ul>
+    </h3>
+</body>
+
+</html>

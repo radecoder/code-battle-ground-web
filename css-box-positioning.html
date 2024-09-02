@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Posioning in CSS</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .box {
+            margin: 3px;
+            padding: 3px;
+            height: 300px;
+            width: 50vw;
+            border: 2px solid green;
+        }
+        .box1 {
+            background-color: antiquewhite;
+            /* position: absolute; */
+            position: fixed;
+            top: 10px;
+            left: 30vw;
+        }
+
+        .box2 {
+            background-color: cornflowerblue;
+            /* position: relative;
+            top: -50px;
+            left: 56px; */
+            position: sticky;
+            top: 0;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box3 {
+            background-color: yellow;
+        }
+
+        .box4 {
+            background-color: darkmagenta;
+        }
+
+        .parent{
+            padding: 70px;
+            margin: 70px;
+            border: 3px solid blueviolet;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"> Jab ham box 1 ko ABSOLUTE kar dege or top and left ko increase ya decrease krege to vo apne (parent ke prati positioning hoga)... or uska parent positioned(like abosute, relative, fixed, sticky, tranform, filter, perspective) hona chahiye .... IF no parent is positioned then... box1 positioning from html....<br> If Position is FIXIED......then kitna bhi scoll kro box ki position ek jagah fixed rahegi
+        ....<br>/* Exception: transform, filter, or perspective properties can also make an element appear as positioned */
+        /* transform: translate(0); */
+        /* filter: invert(0); */
+        /* perspective: 0em; */</div>
+        <div class="box box2"> Now this box is STICKY and it is like NAVBAR -- It will scroll untill it will touch the top </div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>

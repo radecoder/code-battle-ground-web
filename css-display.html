@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and box shadow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid purple;
+            display: inline-block;
+            width: 344px;
+            padding: 50px;
+            margin: 40px;
+        }
+
+        .box1 {
+            /* display: none;        (box deleted) */
+            /* visibility: hidden;    (box only hidden) */
+            display: inline-flex;
+            /*  boxes one row me hoge  */
+            justify-content: center;
+            /* content centre me hoge  */
+            /* display: grid;            boxex ek ke upar ek hoge  */
+        }
+
+        .box3 {
+            border: 2px solid goldenrod;
+            padding: 30px;
+            margin: 30px;
+            width: 1000px;
+            box-shadow: 5px 15px 5px purple;
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 4px purple;
+            outline: 5px solid blue;
+            margin: 20px;
+            border: 5px solid darkgoldenrod;
+             border-radius: 30px; /*curve hogi outline or border dono*/
+            width: 1000px;
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        this a box one
+    </div>
+    <div class="box">this is box two</div>
+    <span>This is box </span>
+    <span>Three </span>
+    <div class="box3">
+        Here we Learn about Shadows in Box or Box-Shadows......syntax........box-shadow: h-offset v-offset blur spread
+        color inset;
+    </div>
+    <div class="text-shadow"> text-shadow: h-offset v-offset blur color;..........outline: width style color;</div>
+</body>
+
+</html>

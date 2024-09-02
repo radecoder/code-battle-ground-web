@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 10px solid green;
+            /* width: 2048px; */
+            width: 80vw;
+            /*viewport width (and no horizontal bar*/
+            height: 10vh;
+            margin: 20px auto;
+            /* (both side 20px reduce) */
+            /* font-size: 12px; */
+            background-color: aqua;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 10px solid green;
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 20px auto;
+            /* font-size: 18px; */
+            background-color: aqua;
+        }
+
+        .container>div {
+            font-size: 2em;
+            border: 2px solid red;
+            width: 50%;
+        }
+
+        .container>div>div {
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycont {
+            box-sizing: border-box;
+            margin: 23px auto;
+            border: 10px solid green;
+            background-color: rgb(212, 173, 248);
+            color: darkred;
+            font-size: 22px;
+            /* width: 100vmin;  */
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is the box
+    </div>
+
+    <div class="container">
+        <div>
+            em ka matlab jitna container ko font size milne vala tha Eg. (18px) milne vala tha... to (em) ka matlab
+            18*(val of em)= 18*2=36px and if we remove 18px container size then container size will be 16px (as
+            default). So 16px*2em= 32px ........
+        <div>
+            Or agar ham 2rem kre to root ka 2 times (html root). So if html font
+            size is 12px and container p size is 2rem then it will be 12px*2rem=
+            24px....... width 50% means parent ki width ki 50%
+        </div>
+
+    </div>
+     <!-- Expand this to see that this container will adjust its height lorem999 -->
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magni voluptates commodi. Eveniet tenetur voluptas explicabo suscipit, quae fugiat pariatur sit nisi sequi. Repellat eveniet nam aliquid, ipsam minima tempora voluptas temporibus labore praesentium hic neque nihil ex autem reiciendis omnis quos itaque natus modi aliquam, illum ut eaque soluta totam nulla. Odio quas, nostrum tempora quod necessitatibus, laudantium aut iure expedita ipsum, deleniti autem dolor eos itaque id molestiae ad ullam corrupti sequi optio neque eveniet nobis inventore quibusdam incidunt! Nihil corrupti, ipsam consequuntur exercitationem libero voluptatibus, enim voluptatem est impedit labore assumenda similique quibusdam. Tempore harum numquam animi voluptatibus odio quos voluptate accusantium. Velit est esse dolores eaque ut minima culpa aut, neque ipsum veniam magnam cum beatae non sunt voluptas suscipit, necessitatibus eius voluptatibus repellendus consequuntur iure facilis numquam. Consectetur, inventore repudiandae. Esse dolor, cum velit harum quas cumque vel nihil, voluptate quaerat voluptatibus ullam? Suscipit beatae alias itaque vero deleniti aut ullam harum dignissimos hic molestiae nihil facere voluptate modi deserunt quibusdam odit asperiores at voluptatibus ducimus, reprehenderit ut optio. Et velit aperiam aspernatur, corrupti libero numquam distinctio quasi enim, laborum alias, sed molestias excepturi quia blanditiis. In aliquid suscipit quo tempora molestias? Repellat quam doloremque reiciendis exercitationem nulla corrupti, consequatur esse fuga quia quibusdam pariatur quos beatae iste, ut, tempora vero alias sit quidem sequi. Voluptatem, repellat iure? Cum reiciendis blanditiis quam. Eum rerum, corporis dolorum provident facilis iure sapiente beatae ipsam ratione perspiciatis inventore exercitationem quaerat! Accusantium provident voluptas illo amet iure a iusto! Alias iure perspiciatis itaque magni ea dolore voluptatem nihil fugiat adipisci, praesentium iste nesciunt, aspernatur expedita vitae maxime fuga ratione quibusdam magnam error molestias ipsa distinctio. Ducimus nam explicabo odit dicta repellendus dignissimos laboriosam iusto natus consequatur ad facere maiores iure, fuga voluptate qui distinctio assumenda tempora eius debitis minima ea fugit expedita laborum optio! Error asperiores ipsum laudantium unde ab minima officia id cupiditate voluptate ipsam magni quae architecto, sunt est ratione enim aspernatur veniam! Molestias, facilis hic nemo deleniti tempora placeat exercitationem. Sint quibusdam quis deserunt rem adipisci corporis odio sunt necessitatibus unde, qui itaque odit, sed voluptatum? Culpa delectus repellat necessitatibus adipisci quae, ratione animi, iure dolor tenetur, voluptates aperiam! Nulla, mollitia sequi veniam eveniet temporibus vero provident tenetur eligendi omnis, natus ipsum quas excepturi rerum accusamus expedita, est praesentium quo odit sint totam animi fugiat! Architecto rem iure officiis dolor optio debitis, quidem enim voluptatibus deleniti praesentium doloribus perspiciatis hic aliquid illo ratione! Deserunt necessitatibus, provident asperiores vitae excepturi aliquid voluptas non distinctio itaque perspiciatis natus, voluptatum qui. Voluptatum reiciendis expedita ducimus quia quae officiis iure ipsam debitis hic placeat! Consequatur qui, quod temporibus fugit totam provident consequuntur consectetur necessitatibus repudiandae distinctio numquam earum, neque laborum cumque harum quasi ea laboriosam eius, omnis libero porro esse odit tempore quo? Maiores tenetur eveniet ullam neque iusto hic quisquam dolores cumque atque, commodi eum eaque ut molestiae repudiandae corrupti error culpa, impedit quos, dolor voluptatum ea qui aspernatur. Blanditiis, autem soluta. Impedit, perferendis qui libero pariatur sunt debitis eligendi eius! Cum consequuntur sit, eius nam assumenda corporis accusantium dolores, architecto veniam corrupti facilis exercitationem quasi molestiae suscipit sed possimus? Officia quibusdam voluptatem odit fugit reiciendis laborum quaerat perferendis. Veniam dolores obcaecati, deserunt vero, sapiente totam quas aperiam ad laborum earum quaerat nostrum. Nesciunt cum neque et, voluptatibus quae ipsum assumenda vero id deserunt voluptas nihil unde repellat nulla quasi, numquam ea quaerat repudiandae sint magnam, perferendis dolorum architecto molestiae. Aliquid maiores cupiditate non, suscipit, saepe omnis reiciendis laudantium in nesciunt quisquam dolores? Natus facilis consequuntur harum pariatur doloribus molestias quam temporibus alias praesentium iusto dolore minima at ea saepe rem maiores dolorum labore, sapiente ullam et. Ducimus dolorem rem animi aut ipsa, quaerat ab et accusantium. Soluta, iure. Esse suscipit et officiis adipisci fugiat veritatis atque, nobis tempore accusamus aperiam, modi harum dolor culpa fuga quae vero eaque doloremque minima. Voluptatem officiis laudantium quos similique? Sunt molestiae saepe illum dolorem delectus! Placeat id dolorum aut incidunt voluptate, inventore, accusamus maxime molestiae est ad repellendus tempore illo sed distinctio debitis enim? Corrupti unde ipsum vero cupiditate velit aspernatur. Commodi corrupti eius autem illo eligendi delectus doloremque molestiae nobis aliquid recusandae, voluptas sequi. Molestias omnis similique corporis aut nobis numquam excepturi tenetur, harum ipsam cum porro maiores magnam fuga tempora inventore illum autem odit explicabo nisi. Velit esse repellendus corporis at et ex facere sint iusto asperiores, sapiente officia fuga non fugit aut perspiciatis ut id qui pariatur itaque aliquid ab? Accusantium dolores quibusdam iusto earum perspiciatis impedit, in saepe hic aliquam quae. Quos commodi quidem ex laborum quo quam non veniam? Ratione explicabo non quae quam soluta iste possimus doloribus iusto nesciunt illo molestiae deleniti officia minima illum, qui eius, consectetur corporis veritatis unde id. Quod possimus obcaecati officiis dicta cum laborum quae. Iure ipsa et repellendus perferendis. Aliquid praesentium officia illum asperiores vel libero unde iure totam veritatis, rerum explicabo corrupti quis labore. Facilis voluptates animi voluptatibus ipsam accusantium, sapiente culpa ipsum debitis explicabo corporis corrupti ab a veniam voluptatum nulla reprehenderit autem, inventore optio minima laudantium asperiores et voluptate recusandae cupiditate. Magni ut beatae quisquam odit explicabo, assumenda quod quia omnis dignissimos ea cumque tenetur perspiciatis soluta. Dolor molestiae quaerat numquam consequuntur quidem commodi voluptatum perferendis repudiandae consequatur minus cumque, provident distinctio repellendus vitae excepturi unde quia doloremque ipsa in praesentium. Fugiat similique iure aliquid quo odio corporis et perferendis, nisi autem modi quae impedit accusantium soluta incidunt voluptate voluptatum, ipsum aut eaque mollitia quisquam! Laudantium, tempora reiciendis neque incidunt debitis vitae, saepe numquam alias facilis aut soluta officiis adipisci iusto, architecto magnam ipsa fuga corrupti libero accusamus dolores accusantium odit. Sit incidunt, pariatur, deleniti suscipit commodi aliquid ipsa ad ipsum rerum natus voluptatem sapiente corrupti totam repellendus dolorem fuga aut cumque molestiae explicabo adipisci perferendis tenetur itaque corporis. Labore aspernatur veniam mollitia delectus fugit nobis, nostrum fugiat modi assumenda corrupti vel similique quia aperiam deleniti doloremque dolorem sint incidunt.labore iure corporis hic dolores adipisci fugiat earum. Rem doloribus libero velit error ipsam culpa?
+</div>
+    <div class="mycont">
+        I am another container ....100vmin and 100vh both are same... In phone vmin is width (phone me width choti hoti
+        hai) and in computer vmin is height(computer me height choti hoti hai) 
+    </div>
+</body>
+
+</html>

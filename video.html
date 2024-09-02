@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding videos</title>
+    <style>
+        div {
+            background-color: rgb(105, 105, 160);
+        }
+        /* class selector */
+         .green {
+            background-color: rgb(126, 224, 27);
+         }
+         /* id selector */
+         #green{
+            background-color: rgb(43, 67, 226);
+         }
+         /* child selector */
+         div > p {
+            color: rgb(208, 208, 18);
+            background-color: rgb(124, 82, 240);
+         }
+         /* descendent selector */
+         div p {
+            color: rgb(208, 208, 18);
+            background-color: rgb(203, 13, 20);
+         }
+         /* universal selector */
+         *{
+            margin:0;
+            padding:0;
+         }
+         /* pseudo selector */
+         a:visited{
+            color: rgb(215, 233, 17);   
+         }
+         a:link{
+            color: rgb(239, 59, 200);
+         }
+         a:active{
+            background-color: chartreuse;
+         }
+         a:hover{
+            background-color: darkslategray;
+         }
+         p:first-child{
+            color: goldenrod;
+            background-color: darkgreen;
+         }
+    </style>
+</head>
+<body>
+    <video src="https://youtu.be/XZwBNDGuWGU?si=VVRisYNoRUQ3nd2z" controls></video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=MXP4wPZBH7PZF_51" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div>
+        this is the video
+    </div>
+    <div class="green">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolor nobis tenetur vel minus provident natus sequi amet quo vero.
+    </div>
+    <div id="green">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, molestias.
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, velit.</p>
+    </div>
+    <div>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, et!</p>
+        </article>
+    </div>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>   
+    <main class="one">
+        <p>I am First Child</p>
+        <p>I am the second Child</p>
+    </main>
+    
+</body>
+</html>
