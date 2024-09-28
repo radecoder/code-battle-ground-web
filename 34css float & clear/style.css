@@ -1,0 +1,14 @@
+.cards{
+    border: 2px solid blueviolet;
+    display: flow-root;
+}
+img{
+    float: left;
+}
+.card{
+    border: 2px solid green;
+}
+.card:nth-child(3){
+    background-color: chartreuse;
+    clear: both;
+}
