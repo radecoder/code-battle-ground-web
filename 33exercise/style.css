@@ -1,0 +1,31 @@
+:root{
+    --color:rgb(86, 86, 244);   /*globar variable declaration*/
+    --seccolor:rgb(170, 234, 41); 
+    --defpad: 10px;
+    --defop: 0.8;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: var(--color);
+}
+ul{
+   display: flex; 
+}
+ul li {
+    opacity: var(--defop);
+    list-style: none;
+    padding: var(--defpad);
+    border: 20px solid var(--seccolor);
+    margin: 2px;
+}
+ul li:first-child{
+    --color:green;         /*Local variable declaration*/
+    background-color: var(--color,pink); /*and if there is no --color "variable" then pink color*/
+}
+.container{
+    background-color: var(--seccolor);
+    display: inline-block; 
+}
