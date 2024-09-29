@@ -1,0 +1,37 @@
+/* .box:first-child{
+    color: rgb(71, 188, 13);
+} */
+/* .box::first-line{
+    color: chartreuse;
+} */
+ .boxes *{
+    color: rgb(137, 15, 186);
+    border: 2px solid black;
+ }
+ p,a,.box,[data-color="primary"]{
+    padding-top: 45px;
+ }
+ /* .box:nth-child(even){
+    background-color: greenyellow;
+ } */
+  .box:nth-last-child(1){
+    background-color: rgb(196, 212, 128);
+  }
+  .boxes::before{
+    content: "This before pseudo element is very important";
+    background-color: rgb(106, 236, 106);
+  }
+  .boxes::after{
+    content: "Also This after pseudo element is also very important";
+    background-color: rgb(106, 236, 106);
+  }
+  ::selection{
+    background-color: rgb(255, 0, 119);
+  }
+  .box::first-letter{
+    color: rgb(31, 3, 40);
+    font-size: 70px;
+  }
+  input::placeholder{
+    color: brown;
+  }
