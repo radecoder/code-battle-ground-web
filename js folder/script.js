@@ -12,3 +12,6 @@ if(isTrue){
 else{
     console.log("Oh! that's good; you want to become a Software Developer")
 }
+document.title = "This is title"
+
+document.body.style.backgroundColor = "green"
