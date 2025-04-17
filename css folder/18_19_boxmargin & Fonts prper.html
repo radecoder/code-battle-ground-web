@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX Model & FONT & TEXT prop</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=EB+Garamond:wght@700&family=Martel+Sans:wght@600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        /* .martel-sans-semibold {
+         
+         font-weight: 600;
+         font-style: normal;
+          } */
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: chartreuse;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            background-color: crimson;
+            padding: 10px;
+            margin: 10px;
+            border: 3px solid green;
+            width: 400px;
+            height: 150px;
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            margin: 10px;
+            padding: 10px;
+            color: blue;
+            height: 150px;
+            width: 400px;
+            border: 3px solid black;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            /* font-family: sans-serif; */
+            font-family: "Martel Sans", sans-serif;
+            /* font-style: italic; */
+            font-weight: bold;
+            font-size: 21px;
+            color: steelblue;
+            line-height: 2;
+        }
+
+        .p1 {
+            color: rgb(54, 15, 90);
+            font-weight: 1000;
+        }
+
+        .link {
+            font-size: large;
+            color: rgb(127, 85, 12);
+            font-weight: 1000;
+            border: 2px solid black;
+            width: 800px;
+        }
+
+        h2,ol {
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-decoration-thickness: 2px;
+            text-indent: 100px;
+            line-height: 30px;
+
+        }
+        .p2{
+            text-overflow: ellipsis;
+            overflow: scroll;
+            border: 2px solid purple;
+            width: 50px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">this is a box one </div> 1. Content 2. Padding 3. Border 4. Margin
+    <div class="box box2"> Padding is applied inside border and margin applied outside the border</div>
+
+
+    <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/css-box-model/box%20model.png" alt=""
+        height="200px">
+    <h1> Now WE Starting Font in css</h1>
+    <p class="p1">We Can Change font using font family </p>
+    <div class="link">
+        this is link of this image having different font family with html and css code
+        <a href="https://codepen.io/web-dot-dev/pen/yLojraG"> <button>link</button></a> <br>
+        <img src="different font family with html and css code.PNG" height="400" width="600">
+    </div>
+    <div>
+        <p>We can also use some special font that is <a href="https://fonts.google.com/">Google fonts</a>
+        <p>1. click on Get Fonts 2. Get Embeded Code</p>
+        <p>Then we have two ways: 1.LINK- copy and import it in head tag 2.IMPORT- import it in style tag and then copy
+            its font family</p>
+        </p>
+    </div>
+    <h2>Some font properties: </h2>
+    <ol>1. Line-height : it increase the height (gap) between lines</ol>     
+    <ol>2. text-transform: capitalize; this is how to capitalize and smalize the letters</ol>
+    <ol>3. text-decoration: underline;</ol>
+    <ol>4. text-decoration-color: red;</ol>
+    <ol>5. text-indent: 100px;   on increasing, it goes left -> Right</ol>
+    <ol>6. Text overflow </ol>
+    <br>
+    <p class="p2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde fuga optio, tempore mollitia libero eligendi totam distinctio explicabo reiciendis tenetur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus quae veniam similique non deleniti minima provident molestias ab hic consequuntur!     
+    </p> <br>
+
+</body>
+
+</html>
