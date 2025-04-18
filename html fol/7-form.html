@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sign in page -Mohd Sahil</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-
     <div class="sidebar">
         <h2>CSS Topics</h2>
         <a href="template.html">🏠 Template</a>
@@ -37,19 +36,38 @@
         <a href="grid.html">🔲 Grid</a>
         <!-- Add more as you go -->
     </div>
+    <div  class="content">
+        <h1>Sign in to this page</h1>
+        <form action="/submit" method="post">
+            <div>
+                <!-- Text input for username -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
 
-    <div class="content">
-        <h1>Font Tutorial</h1>
-        <p style="background-color: aqua;">HTML Template for All Pages (like font.html)</p>
-        <h2>✅ Now every time you learn a topic:</h2>
-        <ol>
-            <li>Create a new file like selectors.html, mediaqueries.html, etc.</li>
-            <li> Add the same sidebar structure.</li>
-            <li> Link them all together in the sidebar.</li>
-        </ol>
+            <div>
+                <!-- Password input -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div>
+                <!-- Radio buttons for gender -->
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
 
-        <p>Here you can write about fonts, font families, font sizes, etc.</p>
+            <div>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Subscribe to newsletter</label>
+            </div>
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+        </form>
     </div>
+
 
 </body>
 
