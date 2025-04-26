@@ -45,9 +45,14 @@ console.log("")
 let a4 = [23,10,12]
 a4.sort()           //sort arr & modifies original arr
 console.log(a4)
+console.log("")
 
-// let numbers = [1, 2, 3, 4, 5] 
-// numbers.splice(1, 2)    
-// numbers.splice(1, 3)  
+let numbers1 = [1, 2, 3, 4, 5] 
+numbers1.splice(1, 2)    
+console.log(numbers1)
+let numbers2 = [1, 2, 3, 4, 5] 
+numbers2.splice(1, 3)  
+console.log(numbers2)
 // numbers.splice(1, 3, 222, 333) 
+// console.log(numbers)
 // (4) [1, 222, 333, 5]
